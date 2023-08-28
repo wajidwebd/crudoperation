@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Lacquer&family=Montserrat:wght@300&family=Outfit:wght@500;600;700&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.gridlayout{
+    width: 95%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    list-style-type: none;
+    margin: 30px 90px 0px 90px;
+    font-family: 'Poppins', sans-serif;
+}
+.mainflex{
+    display: flex;
+    justify-content: space-between;
+}
+.herosectionbgimage{
+    background: url(../images/Hero\ section-image.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.welcometext{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    padding-top: 160px;
+}
+.para{
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    padding: 35px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.contactbtn{
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    width: 180px;
+}
+.headerflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.alignmentcard{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+.alignmentcard h2{
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 30px;
+}
+.alignmentcard p{
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 30px;
+}
+.alignmentcard button{
+    font-family: 'Poppins', sans-serif; 
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+
+
+}
+.subcardone{
+    border: 1px solid #D5D5D5;
+    width: 380px;
+    overflow: hidden;
+}
+.cardflex{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.welcometextone{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin: 0px 0px 60px 0px;
+}
+.sectionalignment{
+    padding: 100px 0px;
+}
+.bg{
+    width: 100%;
+    background-color:#F0F0F0;
+}
+.ouraddress {
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+   
+    
+}
+.sectionalignment1{
+    padding: 50px 0px;
+}
+.quiklink1 {
+    font-family: 'Poppins', sans-serif;
+    
+}
+.quicklink2{
+    font-family: 'Poppins', sans-serif;
+}
+.emailaddress{
+    font-family: 'Poppins', sans-serif;
+}
+.footerflex{
+    display: flex;
+    justify-content: space-between;
+}
+.quiklink1 p{
+    padding: 10px 0px;
+}
+.quiklink1 h2{
+    padding: 10px 0px;
+}
+.quicklink2 p{
+    padding: 10PX 0px;
+
+
+}
+
+.quicklink2 h2{
+    padding: 10px 0px;
+
+}
+.emailaddress h2{
+    padding: 10px 0px;
+
+}
+.emailaddress p{
+    padding: 10px 0px;
+    width: 280px;
+}
+.ouraddress h2{
+    margin-bottom: 30px;
+}
+.emailinputtag{
+    background-color: transparent;
+    padding: 7px 10px;
+    border: 1px solid #D4D4D4;
+}
+.emailinputtag::placeholder{
+    color: black;
+}
+.emaildiv{
+   position: relative;
+}
+.sendicon{
+    position: absolute;
+    left: 160px;
+    top: 8px;
+    width: 15px;
+    height: 15px;
+}
+.copyrightflex{
+    display: flex;
+    justify-content: space-between;
+}
+.copyrightflex h4{
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px;
+}
+
+
+/* mobile code */
+/* @media screen and (max-width:500px) {
+    .list{
+        margin: 10px 5px 0px 0px;
+        font-size: 8px;
+    }
+    .subdivisionone img{
+        width: 30px;
+    }
+    .cardflex{
+        display: block;
+    }
+    .footerflex{
+        display: block;
+    }
+    
+} */
+
+/* ipad */
+@media screen and (max-width:500px) {
+    .mainflex,.cardflex,.footerflex{
+        display: block;
+    }
+    .list{
+        margin: 15px 0px 15px 0px;
+        font-size: 10px;
+    }
+    .para{
+        width: 100%;
+    }
+    .subdivisionone img{
+        display: none;
+    }
+    .subcardone{
+        width: 100%;
+    }
+
+}
+@media (min-width:700px) and (max-width:850px) {
+    .list {
+        margin: 35px 30px 0px 30px;
+    }
+    .cardflex{
+        display: block;
+    }
+    .para{
+        width: 60%;
+    }
+    .footerflex{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .ouraddress,.quiklink1,.quicklink2,.emailaddress{
+        width: 50%;
+    }
+    .ouraddress p{
+        width: 60%;
+    }
+}
+
+

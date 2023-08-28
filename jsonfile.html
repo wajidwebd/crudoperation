@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="datapassing"></h3>
+
+    <script>
+
+
+let datapass = document.getElementById("datapassing");
+
+let request = new XMLHttpRequest();
+request.open("GET","firstpage.json");
+request.onreadystatechange = function(){
+    if(request.readyState == 4 && request.status == 200){
+       let object =JSON.parse(this.responseText);
+       console.log(object);
+
+       datapass.innerHTML = object.reels.title ;
+    }
+}
+
+request.send();
+
+    </script>
+</body>
+</html>
